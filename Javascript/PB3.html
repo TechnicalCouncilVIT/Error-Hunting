@@ -1,0 +1,59 @@
+<!--
+    Teacher Took A Surprise Maths Test on Monday and only 5 students could score non-zero score and the maths 
+teacher wants to find the runner-up among them
+6 6 3 4 1
+-->
+<!--
+output: 
+4 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="PB3">
+		
+	</div>
+</body>
+<script type="text/javascript">
+function insertionSort(inputArr) 
+{
+    let n = inputArr.length;
+        for (let i = 1; i < n; i++) 
+        {           
+            let current = inputArr[i];
+            let j = i-1; 
+            while ((j > -1) && (current < inputArr[j])) 
+            {
+                inputArr[j+1] = inputArr[j];
+                j--;
+            }
+            inputArr[j+1] = current;
+        }
+    return inputArr;
+}
+
+function remove_duplicates(arr) {
+    var obj = {};
+    var ret_arr = [];
+    for (var i = 0; i < arr.length; i++) {
+        obj[arr[i]] = true;
+    }
+    for (var key in obj) {
+        ret_arr.push(key);
+    }
+    return ret_arr;
+}
+
+
+inputArr=[6,6,3,4,1];
+a=insertionSort(inputArr);
+result=remove_duplicates(a);
+runner_up=result[result.length-1];
+document.getElementById("PB3").innerHTML ="The Runner up Is:";
+document.getElementById("PB3").innerHTML =runner_up;
+
+</script>
+</html>

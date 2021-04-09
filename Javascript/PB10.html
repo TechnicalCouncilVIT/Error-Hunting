@@ -1,0 +1,39 @@
+<!--
+  Take the line from previous ques that you  got from previous question and find its last word
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+    <input type="file" name="file" id="file">
+</body>
+<script type="text/javascript">
+  document.getElementById('file').onchange = function(){
+  var file = this;files[0];
+
+  var reader = new FileReader();
+  reader.onload = function(progressEvent){
+    
+    var count=0;
+    var lines = this.result.split('\n')
+    for(var line = 0; line < lines.length; line++)
+    {
+      count=count+1;
+      //Here Comes Your Answer of Q9
+      if (count==)
+      {
+        console.log("Middle Line:" + lines[line]);
+        myString = lines[line];
+        myString = myString.substring(myString.lastIndexOf(" "),);
+        console.log("Last word is" + myString);
+      }
+    }
+    console.log("TotaL Lines:" + count);
+  };
+  reader.readAsText(file);
+};
+</script>
+</html>

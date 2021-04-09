@@ -1,0 +1,57 @@
+<!--
+	Fermat’s last theorem, also called Fermat’s great theorem, the statement that there are no natural numbers 
+(1, 2, 3,…) x, y, and z such that x**n + y**n = z**n, in which n is a natural number greater than 2. For example, if
+n = 3, Fermat’s last theorem states that no natural numbers x, y, and z exist such that x3 + y 3 = z3 
+(i.e., the sum of two cubes is not a cube).
+-->
+<!--
+Input:
+a=2
+b=3
+c=4
+n=3
+-->
+<!--
+Output:
+No that doesn't
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="demo">
+		
+	</div>
+</body>
+<script type="text/javascript">
+function input_fermat() 
+{
+	var a = prompt("Enter the first variable \'a\': \n");
+	var b = prompt("Enter the first variable \'b\': \n");
+	var c = prompt("Enter the first variable \'c\': \n");
+	var n = prompt("Enter value of n \n");
+	 return a,b,c,n;
+}
+function check_fermat(a,b,c,n)
+{
+	a=int(a);
+	b=int(b);
+	c=int(c);
+	n=int(n);
+	calc_1=Math.pow(a,n);
+    calc_2=Math.pow(b,n);
+    calc_3=Math.pow(c,n);
+    if (n>2 && int(calc_1) + int(calc_2) == calc_3)
+    {
+        document.getElementById("demo").innerHTML ="Holy smokes, Fermat was wrong!";
+    }
+    else{
+        document.getElementById("demo").innerHTML ="No that doesn\'t";
+    }
+}
+values = input_fermat();
+results = check_fermat();
+</script>
+</html>

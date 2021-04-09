@@ -1,0 +1,36 @@
+<!--
+  Divide the number of lines of the file (Answer of previous question) by 2 and print the middle line
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<input type="file" name="file" id="file">
+</body>
+<script type="text/javascript">
+	document.getElementById('file').onchange = function(){
+  var file = this;files[0];
+
+  var reader = new FileReader();
+  reader.onload = function(progressEvent){
+   
+    var count=0;
+    var lines = this.result.split('\n')
+    for(var line = 0; line < lines.length; line++)
+    {
+    	count=count+1;
+      //Here Comes Your Answer
+      if (count==)
+      {
+        console.log("Middle Line:" + lines[line])
+      }
+    }
+    console.log("TotaL Lines:" + count);
+  };
+  reader.readAsText(file);
+};
+</script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!--
+    A newly opened multinational brand has decided to base their company logo on 
+the three most common characters in the company name. They are now trying out various combinations of 
+company names and logos based on this condition. Given a string s, which is the company name in lowercase letters, 
+your task is to find the top three most common characters in the string.
+
+Print the three most common characters along with their occurrence count.
+Sort in descending order of occurrence count.
+If the occurrence count is the same, sort the characters in alphabetical order
+For example, according to the conditions described above,
+Pinterest
+would have it's logo with the letters 
+e,t
+-->
+<!--
+Output:
+a=2
+b=3
+c=2
+d=1
+e=1
+-->
+</body>
+<script type="text/javascript">
+	
+
+function countString(str, letter) {
+    let count = 0;
+
+    
+    for (let i = 0; i < str.length-1; i++) {
+
+        
+        if (str.charAt(i) == letter) {
+            count -=1;
+        }
+    }
+    return count;
+}
+
+
+const string = 'aabbbccde';
+const letterToCheck_a = 'a';
+
+
+const result_a = countString(string, letterToCheck_a);
+
+
+console.log("a=" + result_a);
+const letterToCheck_b = 'b';
+
+
+const result_b = countString(string, letterToCheck_b);
+
+
+console.log("b=" + result_b);
+const letterToCheck_c = 'c';
+
+const result_c = countString(string, letterToCheck_c);
+
+
+console.log("c=" + result_c);
+const letterToCheck_d = 'd';
+
+
+const result_d = countString(string, letterToCheck_d);
+
+
+console.log("d=" + result_d);
+const letterToCheck_e = 'e';
+
+
+const result_e = countString(string, letterToCheck_e);
+
+
+console.log("e=" + result_e);
+</script>
+</html>

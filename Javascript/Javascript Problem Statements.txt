@@ -1,0 +1,119 @@
+Javascript Input Output:
+1.Fermat’s last theorem, also called Fermat’s great theorem, the statement that there are no natural numbers 
+(1, 2, 3,…) x, y, and z such that x**n + y**n = z**n, in which n is a natural number greater than 2. For example, if
+n = 3, Fermat’s last theorem states that no natural numbers x, y, and z exist such that x3 + y 3 = z3 
+(i.e., the sum of two cubes is not a cube).
+Input:
+a=2
+b=3
+c=4
+n=3
+Output:
+No that doesn't
+
+2.Requrired Output
+[3, 5, 23, 35, 45, 243, 356, 5346]
+
+3.Teacher Took A Surprise Maths Test on Monday and only 5 students could score non-zero score and the maths 
+teacher wants to find the runner-up among them
+6 6 3 4 1
+output: 
+4 
+
+4.Draw The Pattern
+Output(On console):
+		A
+	   ABC
+	  ABCDE
+	 ABCDEFG
+	ABCDEFGHI
+	 ABCDEFG
+	  ABCDE
+	   ABC
+	    A
+
+
+5..Let's Play PIG!
+
+* See how many turns it takes you to get to 20.
+* Turn ends when you hold or roll a 1.
+* If you roll a 1, you lose all points for the turn.
+* If you hold, you save all points for the turn.
+(EXAMPLE)
+TURN 1
+Roll or hold? (r/h): r
+Die: 4
+Roll or hold? (r/h): r
+Die: 6
+Roll or hold? (r/h): r
+Die: 2
+Roll or hold? (r/h): r
+Die: 3
+Roll or hold? (r/h): r
+Die: 5
+Roll or hold? (r/h): r
+Die: 4
+Roll or hold? (r/h): r
+Die: 1
+Turn over. No score.
+
+TURN 3
+Roll or hold? (r/h): r
+Die: 2
+Roll or hold? (r/h): h
+Score for turn: 2
+Total score: 18
+
+TURN 4
+Roll or hold? (r/h): r
+Die: 4
+Roll or hold? (r/h): h
+Score for turn: 4
+Total score: 22
+
+You finished in 4 turns!
+
+Game over!
+
+6.American Express :- Starting with 34 or 37, length 15 digits.
+		Visa :- Starting with 4, length 13 or 16 digits.
+		MasterCard :- Starting with 51 through 55, length 16 digits.
+		Discover :- Starting with 6011, length 16 digits or starting with 5, length 15 digits.
+		Diners Club :- Starting with 300 through 305, 36, or 38, length 14 digits.
+		JCB :- Starting with 2131 or 1800, length 15 digits or starting with 35, length 16 digits
+
+		Expected Output:
+		true
+		false
+		false
+		false
+		false
+		true
+
+
+7.A newly opened multinational brand has decided to base their company logo on 
+the three most common characters in the company name. They are now trying out various combinations of 
+company names and logos based on this condition. Given a string s, which is the company name in lowercase letters, 
+your task is to find the top three most common characters in the string.
+
+Print the three most common characters along with their occurrence count.
+Sort in descending order of occurrence count.
+If the occurrence count is the same, sort the characters in alphabetical order
+For example, according to the conditions described above,
+Pinterest
+would have it's logo with the letters 
+e,t
+-->
+<!--
+Output:
+a=2
+b=3
+c=2
+d=1
+e=1
+
+8.Find the total Number of lines In the text file
+
+9.Divide the number of lines of the file (Answer of previous question) by 2 and print the middle line
+
+10.Take the line from previous ques that you  got from previous question and find its last word
